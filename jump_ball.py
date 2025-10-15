@@ -336,9 +336,9 @@ class Game:
         if self.player.alive:
             jump_status = "Jump: Ready"
             if not self.player.on_ground:
-                if self.player.double_jump_available and self.jump_count == 1:
+                if self.player.double_jump_available and self.player.jump_count == 1:
                     jump_status = "Jump: Double Available"
-                elif not self.double_jump_available:
+                elif not self.player.double_jump_available:
                     jump_status = "Jump: Used"
             
             jump_text = small_font.render(jump_status, True, WHITE)
