@@ -1,6 +1,5 @@
-# 摄像头控制跳跃游戏 - 依赖库
-
+pygame>=2.5.0
 opencv-python>=4.8.0
 mediapipe>=0.10.0
 numpy>=1.24.0
-pygame>=2.5.0
+librosa>=0.10.0
